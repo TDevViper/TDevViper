@@ -1,83 +1,135 @@
 <div align="center">
 
-# ⚡ ARNAV YADAV
+# ⚡ ARNAV YADAV // TDEVVIPER
 
-### `>_ AI Systems Engineer | Backend Architect | Builder`
+### `SYSTEMS > CODE`
 
-<img src="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&size=22&duration=3000&color=00F7FF&center=true&vCenter=true&width=600&lines=Designing+ASTRA+AI+Assistant;Building+Scalable+Systems;Obsessed+with+Performance+%26+AI" />
+<img src="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&size=22&duration=2500&color=00F7FF&center=true&vCenter=true&width=700&lines=Architecting+AI+Systems;Building+Like+It+Matters;Code.+Break.+Optimize.+Repeat.;ASTRA+is+Coming..." />
 
 </div>
 
 ---
 
-## 🧠 System Manifest
+## 🧬 SYSTEM PROFILE
 
 ```yaml
-identity:
-  name: Arnav Yadav
-  alias: TDevViper
-  role: AI Engineer (in progress 🚀)
-  location: India 🇮🇳
-  status: [Building 🛠️, Learning 📚, Shipping ⚡]
+user: Arnav Yadav
+alias: TDevViper
+class: AI Systems Engineer (Evolving)
+mode: Builder ⚡
 
-core_stack:
-  languages: [Python, JavaScript, SQL, Rust (learning)]
-  backend:   [FastAPI, Node.js, Express]
-  ai_stack:  [LLMs, RAG, Vector DBs, NLP, LangChain]
-  systems:   [Docker, Linux, Git, Cloud (learning)]
-  
-architecture:
-  focus: [AI Systems, Backend Infra, Scalable Design]
-  interests: [Autonomous Agents, Memory Systems, Optimization]
+state:
+  - learning: ALWAYS
+  - building: NON-STOP
+  - shipping: IN PROGRESS
 
-active_missions:
-  - project: ASTRA AI Assistant 🤖
-    status: Building Core Intelligence Engine
-  - learning: System Design + AI Engineering
+philosophy:
+  - "If it doesn’t scale, it’s broken."
+  - "If it’s slow, it’s unacceptable."
+  - "If it’s simple, optimize it."
 ```
 
 ---
 
-## ⚙️ What I Actually Do
+## ⚔️ CORE WEAPONS
 
-* 🧠 Build AI systems (not just APIs)
-* ⚡ Optimize performance (memory, speed, architecture)
-* 🏗️ Design backend systems like real-world products
-* 🔍 Break problems → build modular solutions
+```yaml
+languages:
+  - Python 🐍
+  - JavaScript ⚡
+  - SQL 🧠
+  - Rust 🦀 (for power)
+
+backend:
+  - FastAPI
+  - Node.js
+  - Express
+
+ai_systems:
+  - LLMs
+  - RAG Architectures
+  - Vector Databases
+  - NLP Pipelines
+  - LangChain
+
+infrastructure:
+  - Docker 🐳
+  - Linux 🐧
+  - Git
+  - Cloud (loading...)
+```
 
 ---
 
-## 🚀 Featured Project
+## 🧠 WHAT I BUILD
 
-### 🤖 ASTRA - Personal AI Assistant
+> Not apps. Not scripts.
+> **Systems.**
 
-> Inspired by JARVIS. Built from scratch.
-
-* 🧠 Intent + Emotion Engine
-* 📚 Memory System (RAG-based)
-* 🎙️ Voice + NLP integration
-* ⚙️ Modular architecture
-
----
-
-## 🛠️ Tech Stack
-
-<p>
-<img src="https://skillicons.dev/icons?i=python,js,nodejs,react,docker,git,linux" />
-</p>
+* 🧠 AI that understands intent
+* ⚡ Backends that don’t choke under load
+* 🧩 Modular architectures (plug → play → scale)
+* 🔍 Systems that remember, learn, evolve
 
 ---
 
-## 📊 GitHub Telemetry
+## 🚀 PRIMARY MISSION
+
+### 🤖 ASTRA // PERSONAL AI SYSTEM
+
+```diff
++ STATUS: ACTIVE DEVELOPMENT
++ MODE: CORE INTELLIGENCE BUILD
+```
+
+> Not another chatbot.
+> **An evolving AI system.**
+
+**Capabilities:**
+
+* 🧠 Intent Engine (understands user deeply)
+* ❤️ Emotion Engine (context-aware responses)
+* 📚 Memory System (RAG + recall)
+* 🎙️ Voice Interface
+* ⚙️ Modular brain architecture
+
+---
+
+## 🧪 CURRENT FOCUS
+
+```yaml
+- System Design (real-world scale)
+- AI Engineering (beyond APIs)
+- Performance Optimization
+- Memory-efficient architectures
+```
+
+---
+
+## ⚡ DEV MINDSET
+
+```
+while(alive) {
+  learn();
+  build();
+  break_things();
+  optimize();
+  repeat();
+}
+```
+
+---
+
+## 📊 TELEMETRY
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=TDevViper&show_icons=true&theme=tokyonight" />
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=TDevViper&theme=tokyonight" />
+  <img src="https://github-readme-stats.vercel.app/api?username=TDevViper&show_icons=true&theme=tokyonight&hide_border=true" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=TDevViper&theme=tokyonight&hide_border=true" />
 </p>
 
 ---
 
-## 🧩 Contribution Snake
+## 🧬 CONTRIBUTION MATRIX
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/TDevViper/output/github-contribution-grid-snake.svg" />
@@ -85,17 +137,21 @@ active_missions:
 
 ---
 
-## 🧠 Philosophy
+## 🧠 FINAL THOUGHT
 
-> "I don't just write code. I design systems that think."
-
----
-
-## 📬 Connect
-
-* 💼 GitHub: https://github.com/TDevViper
-* 🚀 Building in public
+> "Average developers write functions.
+> I design intelligence."
 
 ---
 
-<p align="center">⚡ End of Line.</p>
+## 📡 CONNECT
+
+```bash
+> github.com/TDevViper
+> building in public...
+> no shortcuts.
+```
+
+---
+
+<p align="center">⚡ SYSTEM ONLINE</p>
