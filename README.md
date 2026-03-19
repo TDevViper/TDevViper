@@ -164,7 +164,7 @@ computational_neuroscience_intro/
 
 **Open to research collabs, interesting problems, and people who care about correctness.**
 
-[![Email](https://img.shields.io/badge/email-reach%20out-00f7ff?style=for-the-badge&logo=gmail&logoColor=white&labelColor=0d0d0d)](mailto:your@email.com)
+[![Email](https://img.shields.io/badge/email-reach%20out-00f7ff?style=for-the-badge&logo=gmail&logoColor=white&labelColor=0d0d0d)](arnavyadavop@gmail.com)
 [![GitHub](https://img.shields.io/badge/GitHub-TDevViper-00f7ff?style=for-the-badge&logo=github&logoColor=white&labelColor=0d0d0d)](https://github.com/TDevViper)
 
 <br/>
