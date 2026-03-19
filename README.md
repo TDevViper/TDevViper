@@ -1,138 +1,174 @@
 <div align="center">
 
-# 🦊⚔️ ARNAV YADAV // TDEVVIPER
+<img src="https://capsule-render.vercel.app/api?type=venom&color=0:0d0d0d,50:00f7ff,100:0d0d0d&height=200&section=header&text=ARNAV%20YADAV&fontSize=60&fontColor=00f7ff&animation=fadeIn&fontAlignY=55&desc=TDevViper%20%2F%2F%20AI%20Systems%20Engineer&descSize=18&descAlignY=75&descColor=ffffff"/>
 
-### `> INITIALIZING SYSTEM...`
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=20&duration=2000&pause=800&color=00F7FF&center=true&vCenter=true&width=700&lines=Building+systems+that+think;AI+%2B+Backend+%2B+Security;FastAPI+%7C+Async+%7C+LLMs+%7C+eBPF;From+code+to+production+architecture;93%2F100+%E2%80%94+and+still+learning" alt="Typing SVG" />
 
-<img src="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&size=22&duration=2500&color=00F7FF&center=true&vCenter=true&width=800&lines=AI+Systems+Architect;Backend+Engineer;Designing+ASTRA;Code.+Scale.+Dominate." />
+<br/>
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:00F7FF,100:000000&height=120&section=header"/>
+[![GitHub followers](https://img.shields.io/github/followers/TDevViper?style=for-the-badge&logo=github&color=00f7ff&labelColor=0d0d0d)](https://github.com/TDevViper)
+![Profile views](https://komarev.com/ghpvc/?username=TDevViper&style=for-the-badge&color=00f7ff&labelColor=0d0d0d)
 
 </div>
 
 ---
 
-## 🧬 > SYSTEM_MANIFEST.v3.yml
+<img align="right" width="380" src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif"/>
 
-```yaml
-identity:
-  name: Arnav Yadav
-  alias: TDevViper
-  class: AI Systems Engineer (Evolving)
-  region: India 🇮🇳
-  status: [ONLINE 🟢, BUILDING ⚡]
+### Who I am
 
-protocols:
-  primary_lang: [Python, JavaScript, SQL, Rust 🦀]
-  ai_stack:     [LLMs, RAG, Vector DBs, NLP]
-  backend:      [FastAPI, Node.js, Express]
-  infra:        [Docker, Linux, Git, Cloud]
+I'm a CS student from India who builds things that are more than they need to be.
 
-architecture:
-  paradigm: [Modular Systems, Scalable Infra, AI-first Design]
-  interests: [Autonomous Agents, Memory Systems, Optimization]
+My main project — **ASTRA** — is a local AI system with a modular pipeline architecture, hybrid memory, async inference, and a security model I audited end-to-end and rebuilt from scratch. It went through a structured engineering review cycle, from 62/100 to 93/100 across five phases of critical fixes, security hardening, and architectural refactors.
 
-active_processes:
-  - project: ASTRA AI 🤖
-    state: CORE ENGINE DEVELOPMENT
-  - learning: System Design + AI Engineering
+I care about systems correctness more than feature count. I care about why a design decision was made more than that it was made. I write code I can defend in a room full of people smarter than me.
 
-sys_note: "Code is temporary. Systems are forever."
-```
+Currently exploring: **computational neuroscience + VR + brain-signal analysis**
+
+<br clear="right"/>
 
 ---
 
-## ⚔️ > CORE_DIRECTIVE
-
-> I don’t build projects.
-> **I engineer systems that think, adapt, and scale.**
-
----
-
-## 🧠 > ACTIVE SYSTEM: ASTRA
-
-<div align="center">
-<img src="https://media.giphy.com/media/3o7TKsQ8UQv8n5XW3K/giphy.gif" width="500"/>
-</div>
-
-```diff
-+ STATUS: ONLINE
-+ MODE: INTELLIGENCE EVOLUTION
-```
-
-**Capabilities:**
-
-* 🧠 Intent Recognition Engine
-* ❤️ Emotion-Aware Responses
-* 📚 Persistent Memory (RAG-based)
-* 🎙️ Voice Interaction Layer
-* ⚙️ Modular AI Brain
-
----
-
-## 🛠️ > NEURAL INTERFACE
-
-<div align="center">
-<img src="https://skillicons.dev/icons?i=python,js,nodejs,react,docker,git,linux,rust" />
-</div>
-
----
-
-## 📊 > DATA TELEMETRY
+## Stack
 
 <div align="center">
 
-<img src="https://github-readme-stats.vercel.app/api?username=TDevViper&show_icons=true&theme=tokyonight&hide_border=true" height="150"/>
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=TDevViper&theme=tokyonight&hide_border=true" height="150"/>
+<img src="https://skillicons.dev/icons?i=python,fastapi,react,docker,linux,git,redis,sqlite&theme=dark" />
+<br/>
+<img src="https://skillicons.dev/icons?i=js,nodejs,rust,typescript,bash,vscode,github,figma&theme=dark" />
 
 </div>
 
----
+<br/>
 
-## 🧩 > CONTRIBUTION MATRIX
-
-<div align="center">
-<img src="https://raw.githubusercontent.com/TDevViper/output/github-contribution-grid-snake.svg"/>
-</div>
-
----
-
-## ⚡ > EXECUTION LOOP
-
-```cpp
-while(alive) {
-    learn();
-    build();
-    break();
-    optimize();
-    repeat();
+```python
+arnav = {
+    "languages":   ["Python", "JavaScript", "SQL", "Rust (learning)"],
+    "backend":     ["FastAPI", "async/await", "WebSocket", "SSE"],
+    "ai_stack":    ["Ollama", "ChromaDB", "FAISS", "LLMBackend abstraction"],
+    "infra":       ["Docker Compose", "Redis", "SQLite", "OpenTelemetry"],
+    "security":    ["HMAC tokens", "injection filters", "sandboxed execution"],
+    "exploring":   ["eBPF", "EEG signal processing", "distributed systems"],
+    "region":      "India 🇮🇳",
+    "status":      "building + applying to interesting problems"
 }
 ```
 
 ---
 
-## 🧠 > SYSTEM PHILOSOPHY
+## ASTRA — Local Personal AI System
 
-> “If it doesn't scale, it's broken.”
-> “If it's slow, it's unacceptable.”
-> “If it's simple, optimize it.”
+<div align="center">
+<img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExcDd4NHBxazVhbWJ6aTI3Y3pxbWxwdDZxMTcxYjR6Y3ZpaGZuM2diZyZlcD12MV9pbnRlcm5hbEdpZiZjdD1n/L1R1tvI9svkIWwpVYr/giphy.gif" width="600"/>
+</div>
+
+<br/>
+
+> A production-quality local AI backend. 100% on-device. No cloud. No data leaves your machine.
+
+```
+User Input → Sanitize → Cache → Intent → Tools → Memory
+          → Web Search → ReAct Agent → LLM → Critic → Reply
+```
+
+| What it has | Why it matters |
+|---|---|
+| Modular `PipelineRegistry` | Add capabilities without editing `brain.py` |
+| Pluggable `LLMBackend` ABC | Swap Ollama → OpenAI → vLLM in 4 methods |
+| Per-request `RequestContext` | No shared state = no race conditions |
+| `MemoryTransaction` | Atomic batch writes — no partial saves |
+| HMAC-signed tool tokens | Client `approved: true` is rejected at the server |
+| 3-session feedback quality gate | One accidental thumbs-up can't poison the dataset |
+| Async OTel observability | Non-blocking traces on every request |
+
+**[→ View ASTRA](https://github.com/TDevViper/Astra_Presonal_ai)**
 
 ---
 
-## 📡 > CONNECT
+## Engineering audit trail
+
+This is the part most people skip. I didn't.
+
+ASTRA went through a full Staff+ engineering audit — concurrency correctness, security surface, architectural gaps, performance ceilings. Then I fixed everything, in phases, with documented reasoning for every decision.
+
+```
+Phase 0  →  62/100   Initial build
+Phase 1-3 → 72/100   FastAPI migration, OTel, structured logging
+CR fixes  → 78/100   Concurrent history bug, double LLM call, Flask removal
+Security  → 83/100   Injection filter, signed tokens, session-scoped cache
+Arch fixes → 88/100  Async observability, lifespan management, TruthGuard isolation
+Phase C   → 93/100   Pipeline registry, LLM abstraction, parallel tools, quality gate
+```
+
+The remaining 7 points are PostgreSQL migration and JWT multi-user auth — infrastructure changes, not code changes. I know exactly what they require. I chose to ship instead of over-engineering for zero users.
+
+---
+
+## GitHub stats
+
+<div align="center">
+
+<img src="https://github-readme-stats.vercel.app/api?username=TDevViper&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0d0d0d&title_color=00f7ff&icon_color=00f7ff&text_color=ffffff&ring_color=00f7ff" height="160"/>
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=TDevViper&theme=tokyonight&hide_border=true&background=0d0d0d&ring=00f7ff&fire=00f7ff&currStreakLabel=00f7ff" height="160"/>
+
+<br/>
+
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=TDevViper&layout=compact&theme=tokyonight&hide_border=true&bg_color=0d0d0d&title_color=00f7ff&text_color=ffffff" height="140"/>
+
+</div>
+
+---
+
+## Contribution graph
+
+<div align="center">
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=TDevViper&theme=react-dark&bg_color=0d0d0d&color=00f7ff&line=00f7ff&point=ffffff&hide_border=true" width="100%"/>
+</div>
+
+---
+
+## What I'm looking for
+
+<div align="center">
+
+| Interested in | Not interested in |
+|---|---|
+| Hard systems problems | Tutorials disguised as projects |
+| Security + AI intersection | Another CRUD app |
+| Neuroscience + data science | Surface-level ML wrappers |
+| Code review + architecture | Shipping fast without understanding |
+| Research with real engineering depth | Hype without substance |
+
+</div>
+
+---
+
+## Currently reading the internals of
 
 ```bash
-> github.com/TDevViper
-> building in public...
-> no limits.
+$ ls ~/deep_dives/
+eBPF_kernel_tracing/
+EEG_signal_processing/
+distributed_systems_patterns/
+vLLM_continuous_batching/
+computational_neuroscience_intro/
 ```
 
 ---
 
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:000000,100:00F7FF&height=100&section=footer"/>
+<img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=tokyonight&quote=If%20it%20doesn%27t%20survive%20a%20concurrent%20load%20test%2C%20it%20doesn%27t%20exist%20yet.&author=personal%20rule" width="700"/>
 
-### ⚡ SYSTEM ONLINE // END OF LINE
+<br/><br/>
+
+**Open to research collabs, interesting problems, and people who care about correctness.**
+
+[![Email](https://img.shields.io/badge/email-reach%20out-00f7ff?style=for-the-badge&logo=gmail&logoColor=white&labelColor=0d0d0d)](mailto:your@email.com)
+[![GitHub](https://img.shields.io/badge/GitHub-TDevViper-00f7ff?style=for-the-badge&logo=github&logoColor=white&labelColor=0d0d0d)](https://github.com/TDevViper)
+
+<br/>
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d0d0d,100:00f7ff&height=100&section=footer"/>
 
 </div>
