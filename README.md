@@ -38,7 +38,7 @@ Currently exploring: **computational neuroscience + VR + brain-signal analysis**
 
 <img src="https://skillicons.dev/icons?i=python,fastapi,react,docker,linux,git,redis,sqlite&theme=dark" />
 <br/>
-<img src="https://skillicons.dev/icons?i=js,nodejs,rust,typescript,bash,vscode,github,figma&theme=dark" />
+<img src="https://skillicons.dev/icons?i=js,nodejs,rust,typescript,bash,,github,figma&theme=dark" />
 
 </div>
 
