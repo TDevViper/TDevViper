@@ -36,11 +36,16 @@ Currently exploring: **computational neuroscience + VR + brain-signal analysis**
 
 <div align="center">
 
+<!-- Core Stack -->
 <img src="https://skillicons.dev/icons?i=python,fastapi,react,typescript,nodejs,docker,linux,git,github&theme=dark" />
 <br/>
+
+<!-- Systems & Languages -->
 <img src="https://skillicons.dev/icons?i=cpp,c,java,rust,bash,js&theme=dark" />
 <br/>
-<img src="https://skillicons.dev/icons?i=redis,sqlite,ollama&theme=dark" />
+
+<!-- Databases & Tools -->
+<img src="https://skillicons.dev/icons?i=redis,sqlite,ollama,nvim&theme=dark" />
 
 </div>
 
