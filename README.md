@@ -8,6 +8,7 @@
 
 [![GitHub followers](https://img.shields.io/github/followers/TDevViper?style=for-the-badge&logo=github&color=00f7ff&labelColor=0d0d0d)](https://github.com/TDevViper)
 [![Email](https://img.shields.io/badge/Email-arnavyadavop%40gmail.com-00f7ff?style=for-the-badge&logo=gmail&logoColor=white&labelColor=0d0d0d)](mailto:arnavyadavop@gmail.com)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-00f7ff?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=0d0d0d)](https://linkedin.com)
 ![Profile views](https://komarev.com/ghpvc/?username=TDevViper&style=for-the-badge&color=00f7ff&labelColor=0d0d0d)
 
 </div>
@@ -32,20 +33,33 @@ Currently exploring: **computational neuroscience + VR + brain-signal analysis**
 
 ---
 
+## 📅 Dev Log
+
+> Updated regularly — what I'm actively working on, reading, or thinking about.
+
+| Date | What I did |
+|------|-----------|
+| 2026-03-22 | README overhaul — structure, devlog, badges |
+| 2026-03-21 | Deep dive: eBPF kernel tracing internals |
+| 2026-03-20 | ASTRA: Refining the injection filter layer |
+| 2026-03-19 | Reading: vLLM continuous batching architecture |
+| 2026-03-18 | EEG signal preprocessing experiments |
+
+*This log gets updated with every meaningful session — code, research, or architecture.*
+
+---
+
 ## Stack
 
 <div align="center">
 
-<!-- Core Stack -->
 <img src="https://skillicons.dev/icons?i=python,fastapi,react,typescript,nodejs,docker,linux,git,github&theme=dark" />
 <br/>
 
-<!-- Systems & Languages -->
 <img src="https://skillicons.dev/icons?i=cpp,c,java,rust,bash,js&theme=dark" />
 <br/>
 
-<!-- Databases & Tools -->
-<img src="https://skillicons.dev/icons?i=redis,sqlite,ollama,nvim&theme=dark" />
+<img src="https://skillicons.dev/icons?i=redis,sqlite,nvim&theme=dark" />
 
 </div>
 
@@ -111,13 +125,11 @@ Arch fixes →  88/100   Async observability, lifespan management, TruthGuard is
 Phase C    →  93/100   Pipeline registry, LLM abstraction, parallel tools, quality gate
 ```
 
-**The remaining 7 points:** PostgreSQL migration and JWT multi-user auth — infrastructure changes, not code changes. I know exactly what they require. I chose to ship instead of over-engineering for zero users. That's also an architectural decision.
+> **The remaining 7 points:** PostgreSQL migration and JWT multi-user auth — infrastructure changes, not code changes. I know exactly what they require. I chose to ship instead of over-engineering for zero users. That's also an architectural decision.
 
 ---
 
 ## What the audit actually found
-
-Most people treat a code review as a checklist. I treated it as a stress test. Here's what surfaced:
 
 | Issue found | Root cause | Fix applied |
 |---|---|---|
@@ -153,7 +165,21 @@ Most people treat a code review as a checklist. I treated it as a stress test. H
 
 ---
 
-## What I'm looking for
+## Currently Reading the Internals of
+
+```bash
+$ ls ~/deep_dives/
+eBPF_kernel_tracing/
+EEG_signal_processing/
+distributed_systems_patterns/
+vLLM_continuous_batching/
+computational_neuroscience_intro/
+VR_brain_signal_interface_research/
+```
+
+---
+
+## What I'm Looking For
 
 <div align="center">
 
@@ -167,20 +193,6 @@ Most people treat a code review as a checklist. I treated it as a stress test. H
 | Correctness-first design | "It works on my machine" |
 
 </div>
-
----
-
-## Currently reading the internals of
-
-```bash
-$ ls ~/deep_dives/
-eBPF_kernel_tracing/
-EEG_signal_processing/
-distributed_systems_patterns/
-vLLM_continuous_batching/
-computational_neuroscience_intro/
-VR_brain_signal_interface_research/
-```
 
 ---
 
