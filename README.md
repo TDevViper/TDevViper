@@ -12,7 +12,7 @@
 
 <br/>
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=16&duration=2800&pause=1000&color=00FF88&center=true&vCenter=true&width=720&lines=I+prioritize+correctness+and+extensibility+over+shortcuts.;ASTRA%3A+7+real+bugs+found%2C+documented%2C+fixed+in+order.;Will+it+hold+under+concurrent+load%3F;Does+the+security+model+survive+adversarial+input%3F;I+write+code+I+can+defend+in+any+room.)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=16&duration=2800&pause=1000&color=00FF88&center=true&vCenter=true&width=720&lines=I+prioritize+correctness+and+extensibility+over+shortcuts.;ASTRA%3A+audited%2C+hardened%2C+and+now+production-ready+SaaS.;Will+it+hold+under+concurrent+load%3F;Does+the+security+model+survive+adversarial+input%3F;I+write+code+I+can+defend+in+any+room.)](https://git.io/typing-svg)
 
 </div>
 
@@ -29,13 +29,13 @@ Name      : Arnav Yadav
 Alias     : TDevViper
 Domain    : AI · Backend · Security
 Region    : India 🇮🇳
-Status    : Building + applying to interesting problems
+Status    : Building ASTRA → SaaS launch
 Exploring : EEG signals · eBPF · Neuroscience · VR
 ```
 
 CS student from India. I build backend systems where **AI meets production reality** — systems that scale, fail safely, and can be extended without touching the core.
 
-My main project — **ASTRA** — went through a structured audit using production engineering principles: concurrency correctness, security surface, architectural gaps. I found 7 real bugs, documented every root cause, and fixed them in order across five phases.
+My main project — **ASTRA** — started as a personal AI assistant, went through a structured FAANG-level audit (scored 3.8/10), and I systematically fixed every issue across 5 phases — ending at ~7.8/10 with full multi-user SaaS infrastructure.
 
 I care about **correctness over feature count.** About *why* a decision was made, not just *that* it was made.
 
@@ -51,7 +51,7 @@ I care about **correctness over feature count.** About *why* a decision was made
 
 | Languages | Backend | AI / Infra | Security | DevOps |
 |:---:|:---:|:---:|:---:|:---:|
-| Python · JS · SQL · Rust | FastAPI · async/await · WebSocket | Ollama · ChromaDB · FAISS | HMAC · Injection filters · Sandboxing | Docker · Redis · SQLite · Linux |
+| Python · JS · SQL · Rust | FastAPI · JWT · WebSocket | Ollama · ChromaDB · FAISS | RBAC · Sandboxing · HMAC | Docker · Redis · SQLite · Linux |
 
 <br/>
 
@@ -59,19 +59,19 @@ I care about **correctness over feature count.** About *why* a decision was made
 
 </div>
 
-**Depth signals:** async event loops · per-request context isolation · atomic memory transactions · LRU + semantic cache layering · non-blocking OTel span export
+**Depth signals:** async event loops · per-request context isolation · atomic memory transactions · LRU + semantic cache layering · sliding-window rate limiting · container-level code sandboxing · JWT + RBAC auth systems
 
 ---
 
-## 🚀 &nbsp;ASTRA — Local AI Backend
+## 🚀 &nbsp;ASTRA — Private AI Platform
 
-> **100% on-device. No cloud. No data leaves your machine.**
+> **Runs on your hardware. Multi-user. Production-hardened. SaaS-ready.**
 
 ```
                          ASTRA REQUEST PIPELINE
   ┌─────────────────────────────────────────────────────────────────┐
   │                                                                 │
-  │  User Input                                                     │
+  │  User Input (JWT authenticated, rate-limited by role)           │
   │      │                                                          │
   │      ▼                                                          │
   │  [Injection Filter] ──→ adversarial prompts rejected here       │
@@ -85,24 +85,25 @@ I care about **correctness over feature count.** About *why* a decision was made
   │      ├──→ [Tool Router] ──→ LLM reads JSON schemas              │
   │      │         │             picks tool + extracts args         │
   │      │         ▼                                                │
-  │      │    [Executor] → web_search / git / monitor / sandbox...  │
-  │      │         │                                                │
+  │      │    [Docker Sandbox] → isolated container, no network,    │
+  │      │         │             read-only fs, PID limit, 128MB cap │
   │      │         ▼                                                │
   │      │    [Synthesizer] → LLM turns result into natural reply   │
   │      │                                                          │
-  │      └──→ [Direct LLM] (no tool needed)                         │
+  │      └──→ [Direct LLM] → Ollama local → Anthropic fallback      │
   │                │                                                │
   │                ▼                                                │
   │          [TruthGuard / Critic]                                  │
   │                │                                                │
   │                ▼                                                │
   │          [MemoryTransaction] → atomic write or rollback         │
+  │          [per-user namespace] → ChromaDB + SQLite isolated      │
   │                │                                                │
   │                ▼                                                │
-  │          [OTel Tracer] → async, fire-and-forget                 │
+  │          [OTel Tracer] → Jaeger · Prometheus · Grafana          │
   │                │                                                │
   │                ▼                                                │
-  │             REPLY                                               │
+  │             REPLY (streamed, per-thread history)                │
   └─────────────────────────────────────────────────────────────────┘
 ```
 
@@ -112,34 +113,34 @@ I care about **correctness over feature count.** About *why* a decision was made
 <tr>
 <td width="33%" valign="top" align="center">
 
-### ◈ Structured Tool Calling
-`LLM` · `JSON Schema` · `Routing`
+### ◈ Auth + RBAC
+`JWT` · `bcrypt` · `4 Roles`
 
-LLM reads tool schemas, picks the right tool and extracts typed args — no regex, no hardcoded patterns. 8 tools: web search, git, system monitor, file reader, task manager, python sandbox, smart home, system controller.
+Full user account system — register, login, refresh tokens. Four roles: owner / admin / user / guest. 13 permissions mapped by role. Privilege escalation prevention baked in — you cannot assign a role equal to or higher than your own.
 
-**→ Replaces fragile pattern matching with model reasoning.**
-
-</td>
-<td width="1%" align="center"><sub>│<br/>│<br/>│<br/>│<br/>│<br/>│<br/>│<br/>│<br/>│<br/>│</sub></td>
-<td width="33%" valign="top" align="center">
-
-### ◈ Security Layer
-`HMAC` · `Injection Filters` · `Sandboxing`
-
-Adversarial prompts caught before LLM reach. Client-side `approved: true` flags rejected at the server via HMAC-signed tokens. Python execution sandboxed behind a feature flag. No implicit trust.
-
-**→ Server validates everything. Client trusts nothing.**
+**→ No shared API key. Every request is a real identity.**
 
 </td>
 <td width="1%" align="center"><sub>│<br/>│<br/>│<br/>│<br/>│<br/>│<br/>│<br/>│<br/>│<br/>│</sub></td>
 <td width="33%" valign="top" align="center">
 
-### ◈ Correctness Hardening
-`Concurrency` · `Atomic Writes` · `Quality Gates`
+### ◈ Docker Sandbox
+`Container isolation` · `No escape`
 
-Per-request `RequestContext` eliminates shared mutable state across async tasks. `MemoryTransaction` gives atomic batch writes with rollback. 3-session feedback gate blocks accidental dataset poisoning.
+Code execution runs in a throwaway Docker container — no network, read-only root filesystem, all Linux capabilities dropped, PID limit enforced, 128MB memory cap. Verified: host filesystem blocked, fork bombs blocked, network blocked.
 
-**→ Fails safely. No partial state, no silent corruption.**
+**→ AST walking replaced with real kernel-level isolation.**
+
+</td>
+<td width="1%" align="center"><sub>│<br/>│<br/>│<br/>│<br/>│<br/>│<br/>│<br/>│<br/>│<br/>│</sub></td>
+<td width="33%" valign="top" align="center">
+
+### ◈ Multi-User SaaS
+`Threads` · `Rate limits` · `Isolation`
+
+Per-user conversation threads with message history and forking from any message. Per-user rate limiting (Redis sliding window): guest 5/min, user 20, admin 60, owner unlimited. All memory namespaced by user_id — zero cross-user data leakage.
+
+**→ One instance, many users, full isolation.**
 
 </td>
 </tr>
@@ -163,7 +164,9 @@ Avg response latency:        ~180ms     →  intent classify + LLM + reply
 Peak memory (full pipeline): ~1.2 GB   →  LLM model loaded + ChromaDB in-memory
 Cache hit latency:           <5ms       →  LRU layer, bypasses LLM entirely
 Tool call overhead:          +40ms avg  →  schema read + arg extraction + synthesis
+Docker sandbox cold start:   ~800ms     →  container spin-up + execution + teardown
 OTel trace overhead:         ~0ms       →  async fire-and-forget, hot path unblocked
+JWT validation overhead:     <1ms       →  in-process JOSE decode, no DB hit
 ```
 
 ---
@@ -174,50 +177,69 @@ OTel trace overhead:         ~0ms       →  async fire-and-forget, hot path unb
 
 | Decision | What I chose | What I gave up | Why |
 |----------|-------------|----------------|-----|
-| Storage | SQLite | PostgreSQL multi-user support | Single-user scope; avoid infra complexity for zero users |
-| Auth | Session tokens | JWT multi-user auth | Not needed yet; HMAC covers tool security |
-| LLM backend | Ollama (local) | OpenAI API (cloud) | Privacy guarantee; pluggable `LLMBackend` ABC makes swap 4 methods |
-| Tool routing | LLM + JSON schema | Pure regex | More robust arg extraction; graceful degradation to regex for weak models |
-| Memory writes | `MemoryTransaction` | Direct DB writes | Atomic rollback worth the abstraction overhead |
-| Tracing | Async OTel | Sync logging | Non-blocking; traces on every request at ~0ms cost |
+| Sandbox | Docker container | gVisor / Firecracker | Mac-compatible; same isolation guarantees for Python execution |
+| Auth | JWT + bcrypt | OAuth / SSO | Sufficient for SaaS v1; swap is 1 file change via auth module boundary |
+| Rate limiting | Redis sliding window + memory fallback | Pure Redis | Resilient — works even when Redis is down |
+| Memory isolation | user_id namespace in SQLite + ChromaDB | Separate DB per user | Simpler ops; same isolation at query layer |
+| LLM fallback | Ollama → Anthropic Claude | Single provider | Eliminates single point of failure; local-first with cloud escape hatch |
+| Conversation storage | SQLite threads table | Postgres | Zero infra overhead; thread forking works at this scale |
+| Observability | Jaeger + Prometheus + Grafana in compose | Managed APM (Datadog) | Full control, zero cost, OTel-compatible for future migration |
 
 ---
 
 ## 📈 &nbsp;Audit Trail
 
-> Structured review using production engineering principles: concurrency correctness, security surface, architectural gaps, performance ceilings.
+> Started with a FAANG-level production readiness audit. Fixed everything. Built a SaaS.
 
 ```
-Phase 0    →  62/100  ████████░░░░░░░░  Initial build
-Phase 1–3  →  72/100  █████████░░░░░░░  FastAPI migration, OpenTelemetry, structured logging
-CR Fixes   →  78/100  ██████████░░░░░░  Concurrent history bug, double LLM call, Flask removal
-Security   →  83/100  ███████████░░░░░  Injection filter, signed tokens, session-scoped cache
-Arch Fixes →  88/100  ████████████░░░░  Async observability, lifespan mgmt, TruthGuard isolation
-Phase C    →  93/100  █████████████░░░  Pipeline registry, LLM abstraction, structured tool calling
+Initial audit score  →  3.8/10  ████░░░░░░░░░░░░  10 critical issues found
+Phase 1 (Security)   →  5.5/10  █████░░░░░░░░░░░  Auth, token limits, dead code, lint gate
+Phase 2 (AI/Code)    →  6.5/10  ██████░░░░░░░░░░  Emotion ML, memory namespacing, agent fixes
+Phase 3 (Arch)       →  7.0/10  ███████░░░░░░░░░  Structured tool calling, observability stack
+Phase 4 (Sandbox)    →  7.5/10  ███████░░░░░░░░░  Docker container isolation, verified escape-proof
+Multi-user SaaS      →  7.8/10  ████████░░░░░░░░  JWT auth, RBAC, threads, rate limiting, dashboard
 
-Remaining: PostgreSQL + JWT multi-user auth.
-Infrastructure, not code. I know what they require.
-I chose to ship over engineering for zero users. That's a deliberate call.
+Remaining gap: managed vector DB, conversation search, Stripe billing.
+Deliberate call — shipping > engineering for zero users.
 ```
 
 ---
 
-## 🐛 &nbsp;Bugs Found & Fixed
+## 🐛 &nbsp;Critical Issues Found & Fixed
 
 <table width="100%">
 <tr>
-<td width="34%"><b>Bug</b></td>
+<td width="34%"><b>Issue</b></td>
 <td width="33%"><b>Root Cause</b></td>
 <td width="33%"><b>Fix</b></td>
 </tr>
-<tr><td>Concurrent history corruption</td><td>Shared mutable list across async requests</td><td>Per-request <code>RequestContext</code> isolation</td></tr>
-<tr><td>Double LLM invocation</td><td>Control flow ambiguity in pipeline</td><td>Explicit state machine, single exit point</td></tr>
-<tr><td>Client-trusted <code>approved</code> flag</td><td>No server-side token validation</td><td>HMAC-signed tool tokens</td></tr>
-<tr><td>Partial memory saves on failure</td><td>Non-atomic write operations</td><td><code>MemoryTransaction</code> with rollback</td></tr>
-<tr><td>Blocking OTel traces</td><td>Synchronous span flush in hot path</td><td>Async span export, fire-and-forget</td></tr>
-<tr><td>Dataset poisoning via feedback</td><td>No quality gate on feedback loop</td><td>3-session confirmation threshold</td></tr>
-<tr><td>Regex-based tool routing</td><td>Fragile pattern matching, no arg extraction</td><td>Structured tool calling with JSON schemas</td></tr>
+<tr><td>Unauthenticated streaming endpoint</td><td>/chat/stream had no auth dependency</td><td>Depends(require_api_key) + JWT rate_limit added</td></tr>
+<tr><td>Global shared memory (all users)</td><td>Single memory.json, no user_id concept</td><td>Per-user namespaced paths + ChromaDB metadata filter</td></tr>
+<tr><td>Python sandbox escape</td><td>AST walking bypassable via __mro__</td><td>Docker container: no network, read-only fs, cap-drop ALL</td></tr>
+<tr><td>2048 token context starvation</td><td>Hardcoded 2021-era limits</td><td>8192 ctx, 1024 predict, intent-aware token budgets</td></tr>
+<tr><td>Flask + FastAPI dual codebase</td><td>Half-completed migration, dead code</td><td>7 Flask files deleted, single FastAPI codebase</td></tr>
+<tr><td>Hardcoded model names in agent loop</td><td>AgentLoop bypassed ModelManager</td><td>Wired to ModelManager.select_model()</td></tr>
+<tr><td>_log_counter race condition</td><td>Global int mutation without lock</td><td>threading.Lock() wrapping all increments</td></tr>
+<tr><td>Bag-of-words emotion detection</td><td>Keyword list, no negation handling</td><td>distilbert-base-uncased-emotion via HuggingFace</td></tr>
+<tr><td>No per-user auth or sessions</td><td>Single shared API key for all users</td><td>JWT access + refresh tokens, bcrypt password hashing</td></tr>
+<tr><td>No access control on dangerous ops</td><td>Any authenticated user could wipe memory / run shell</td><td>RBAC: 4 roles, 13 permissions, privilege escalation blocked</td></tr>
 </table>
+
+---
+
+## 🔐 &nbsp;Security Surface
+
+```
+Layer 1 — Transport    : HTTPS + CORS env-gated (not wildcard in prod)
+Layer 2 — Auth         : JWT Bearer tokens (60min access, 7d refresh)
+Layer 3 — Identity     : bcrypt-hashed passwords, per-user SQLite store
+Layer 4 — Authorization: RBAC — 4 roles, 13 permissions, no escalation
+Layer 5 — Rate limits  : Redis sliding window per user_id, role-aware limits
+Layer 6 — Input        : Prompt injection filter, unicode normalization
+Layer 7 — Execution    : Docker sandbox — no network, no host fs, PID cap
+Layer 8 — Memory       : user_id namespace — zero cross-user data access
+Layer 9 — Audit        : Every request logged — endpoint, user, duration, status
+```
 
 ---
 
@@ -252,9 +274,9 @@ I chose to ship over engineering for zero users. That's a deliberate call.
 <tr>
 <td width="50%">
 
-- `01` &nbsp; EEG signal preprocessing & brain-computer interfaces
-- `02` &nbsp; eBPF kernel tracing and performance tooling
-- `03` &nbsp; vLLM continuous batching architecture
+- `01` &nbsp; ASTRA SaaS — Stripe billing + landing page launch
+- `02` &nbsp; EEG signal preprocessing & brain-computer interfaces
+- `03` &nbsp; eBPF kernel tracing and performance tooling
 
 </td>
 <td width="50%">
