@@ -274,7 +274,7 @@ Layer 9 — Audit        : Every request logged — endpoint, user, duration, st
 <tr>
 <td width="50%">
 
-- `01` &nbsp; ASTRA SaaS — Stripe billing + landing page launch
+- `01` &nbsp; ASTRA — Stripe billing + landing page launch
 - `02` &nbsp; EEG signal preprocessing & brain-computer interfaces
 - `03` &nbsp; eBPF kernel tracing and performance tooling
 
