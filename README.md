@@ -30,7 +30,7 @@ Alias     : TDevViper
 Domain    : AI · Backend · Security
 Region    : India 🇮🇳
 Status    : Building ASTRA → SaaS launch
-Exploring : EEG signals · eBPF · Neuroscience · VR
+Exploring : EEG signals · eBPF · Neuroscience 
 ```
 
 CS student from India. I build backend systems where **AI meets production reality** — systems that scale, fail safely, and can be extended without touching the core.
