@@ -51,7 +51,7 @@ I care about **correctness over feature count.** About *why* a decision was made
 
 | Languages | Backend | AI / Infra | Security | DevOps |
 |:---:|:---:|:---:|:---:|:---:|
-| Python · JS · SQL · Rust | FastAPI · JWT · WebSocket | Ollama · ChromaDB · FAISS | RBAC · Sandboxing · HMAC | Docker · Redis · SQLite · Linux |
+| Python · JS · SQL · Rust | FastAPI · JWT · WebSocket | Ollama · ChromaDB · FAISS | RBAC · Sandboxing · HMAC | Docker · Redis · SQLite · Linux . c++ |
 
 <br/>
 
