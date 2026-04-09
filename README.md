@@ -330,20 +330,6 @@ Layer 9 — Audit        : Every request logged — endpoint, user, duration, st
 </td>
 </tr>
 </table>
-
----
-
-## 🐍 &nbsp;Contribution Trail
-
-<div align="center">
-<br/>
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/TDevViper/TDevViper/output/github-contribution-grid-snake-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/TDevViper/TDevViper/output/github-contribution-grid-snake.svg">
-  <img alt="snake animation" src="https://raw.githubusercontent.com/TDevViper/TDevViper/output/github-contribution-grid-snake-dark.svg" width="97%"/>
-</picture>
-</div>
-
 ---
 
 ## 🤝 &nbsp;Connect
